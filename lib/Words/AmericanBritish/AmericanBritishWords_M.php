@@ -589,7 +589,7 @@
 				'metalization\'s'=>['metallisation\'s', 'metalisation\'s',],
 				'metalization'=>['metallisation', 'metalisation',],
 				'metalizations'=>['metallisations', 'metalisations',],
-				// American has single-l variant, too, but normalize here to one l
+				// American has single-l variant, too, but normalize here to double-l
 				'metallize'=>['metallise', 'metalise', 'metalize'],
 				'metallized'=>['metallised', 'metalised', 'metalized'],
 				'metallizes'=>['metallises', 'metalises', 'metalizes'],
