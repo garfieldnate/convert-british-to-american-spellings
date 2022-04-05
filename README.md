@@ -1,4 +1,17 @@
-﻿# US/UK Spelling Converter
+﻿# Dioco fork of HoldOffHunger/convert-british-to-american-spellings
+
+We use the data in this repository (under `lib/Words/AericanBritish/*.phAmericanBritishWords_*.php`) for normalizing English spellings, meaning converting multiple spellings into one canonical spelling. We use American spellings as a basis, and have edited the data so that conversion is always unambiguous.
+
+We maintain a fork here because we would like to pull future data additions to the upstream repository, but our changes are not necessarily in line with what could be integrated into the upstream.
+
+To generate the JSON files we use in our projects, run:
+
+    python convert_to_json.py lib/Words/AmericanBritish/
+
+This outputs `.json` files in the `lib/Words/AmericanBritish/` directory. In addition, basic sanity checks for ambiguous mappings is executed and warnings are printed; the data is not automatically fixed, and all warnings must be fixed manually.
+
+The original project readme is below:
+# US/UK Spelling Converter
 
 *You* provide the text, with either US/UK-spelling.
 
