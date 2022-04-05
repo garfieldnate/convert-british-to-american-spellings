@@ -671,7 +671,6 @@
 				'homogenizers'=>'homogenisers',
 				'homogenizes'=>'homogenises',
 				'homogenizing'=>'homogenising',
-				'homolog'=>'homologue',
 				'homologization'=>'homologisation',
 				'homologize'=>'homologise',
 				'homologized'=>'homologised',
@@ -680,7 +679,7 @@
 				'homologizers'=>'homologisers',
 				'homologizes'=>'homologises',
 				'homologizing'=>'homologising',
-				'homologs'=>'homologues',
+				// normalize to -ue variant
 				'homologue\'s'=>'homolog\'s',
 				'homologue'=>'homolog',
 				'homologues'=>'homologs',

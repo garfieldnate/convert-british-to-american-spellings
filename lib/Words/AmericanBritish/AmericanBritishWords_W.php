@@ -206,7 +206,6 @@
 				'woolennest'=>'woollennest',
 				'woolens'=>'woollens',
 				'woolgathering'=>'wool-gathering',
-				'woolies'=>'woollies',
 				'woollier'=>'woolier',
 				'woollies'=>'woolies',
 				'woolliest'=>'wooliest',

@@ -241,7 +241,7 @@
 				'uncriticized'=>'uncriticised',
 				'uncriticizing'=>'uncriticising',
 				'uncriticizingly'=>'uncriticisingly',
-				// uncrystalized, etc. also occur, and we normalize to "uncrystallized"
+				// normalize to double-l
 				'uncrystallizabilities'=>'uncrystallisabilities',
 				'uncrystallizability\'s'=>'uncrystallisability\'s',
 				'uncrystallizability'=>'uncrystallisability',

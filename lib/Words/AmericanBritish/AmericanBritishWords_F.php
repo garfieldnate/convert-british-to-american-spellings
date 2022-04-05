@@ -702,8 +702,7 @@
 				'furor\'s'=>'furore\'s',
 				'furor'=>'furore',
 				'furors'=>'furores',
-				'fusileer'=>'fusilier',
-				'fusileers'=>'fusiliers',
+				// normalize to -ier variant
 				'fusilier\'s'=>'fusileer\'s',
 				'fusilier'=>'fusileer',
 				'fusiliers'=>'fusileers',

@@ -10,22 +10,22 @@ from pathlib import Path
 
 def main(dir):
 
-    all_us = set()
     all_uk = set()
+    all_us = set()
 
     for child in Path(dir).iterdir():
-        uk_to_us = extract_american_to_british(child)
-        us_to_uk = reverse_direction(uk_to_us)
+        us_to_uk = extract_american_to_british(child)
+        uk_to_us = reverse_direction(us_to_uk)
 
-        all_uk |= set(uk_to_us.keys())
         all_us |= set(us_to_uk.keys())
+        all_uk |= set(uk_to_us.keys())
 
         child.name
         letter = child.stem[-1]
-        with (child.parent / f"british_to_american_{letter}.json").open("w") as f:
-            json.dump(us_to_uk, f, indent=2)
+        with (child.parent / f"en_normalized_{letter}.json").open("w") as f:
+            json.dump(uk_to_us, f, indent=2)
     
-    spellings_in_both = all_uk & all_us
+    spellings_in_both = sorted(list(all_us & all_uk))
     if spellings_in_both:
         warn(f"{len(spellings_in_both)} spellings in both US and UK: {spellings_in_both}")
         warn("Above warning must be manually fixed")
